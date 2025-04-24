@@ -1,7 +1,9 @@
 💱 Currency Converter (Vanilla JS)
+
 A lightweight, no-framework currency exchange web app with real-time rates, dark/light mode, historical charts, and market trends—built purely with HTML, CSS, and JavaScript.
 
 🌟 Key Features
+
 ✔ Instant Currency Conversion – 160+ currencies with live exchange rates.
 
 ✔ Dark/Light Mode Toggle – Smooth theme switching (saves preference).
@@ -15,14 +17,23 @@ A lightweight, no-framework currency exchange web app with real-time rates, dark
 ✔ Mobile-Friendly – Fully responsive design.
 
 ⚙️ Tech Stack
+
 Core: Vanilla JavaScript (ES6+)
+
 Styling: Pure CSS (Flexbox/Grid)
+
 Charts: Chart.js (for historical data graphs)
+
 API: ExchangeRate-API (free tier) or Frankfurter.app (no API key needed)
+
 Local Storage: Saves user theme preference
 
 Why This Project?
+
 Zero dependencies (no React, jQuery, etc.) → Fast loading!
+
 Beginner-friendly code structure (great for learning JS).
+
 Modern UI with CSS animations/transitions.
+
 🔗 Live Demo: https://mohamed074k.github.io/Currency-converter/
