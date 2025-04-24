@@ -1,0 +1,139 @@
+<!-- By Mohamed Elsayed :[www.linkedin.com/in/mohamed-elsayed-2623602a1] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light-mode">
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="currency-loader">
+                <div class="currency-loader-inner"></div>
+                <div class="currency-loader-inner"></div>
+                <div class="currency-loader-inner"></div>
+            </div>
+            <div class="loader-logo">Currency Converter</div>
+            <div class="loader-text">Loading exchange rates...</div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Currency Converter</h1>
+            <div class="theme-selector">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="theme-dropdown">
+                    <button class="theme-option" data-theme="light">
+                        <i class="fas fa-sun"></i> Light
+                    </button>
+                    <button class="theme-option" data-theme="dark">
+                        <i class="fas fa-moon"></i> Dark
+                    </button>
+                    <button class="theme-option" data-theme="system">
+                        <i class="fas fa-desktop"></i> System
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="converter-section">
+                <div class="converter-card">
+                    <h2>Convert Currency</h2>
+                    <form id="converter-form">
+                        <div class="input-group">
+                            <input type="number" id="amount" placeholder="Enter amount" required>
+                        </div>
+                        <div class="currency-selectors">
+                            <div class="select-group">
+                                <label for="from-currency">From</label>
+                                <div class="custom-select">
+                                    <select id="from-currency" required>
+                                        <option value="">Select currency</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="button" id="swap-currencies" class="swap-btn">
+                                <i class="fas fa-exchange-alt"></i>
+                            </button>
+                            <div class="select-group">
+                                <label for="to-currency">To</label>
+                                <div class="custom-select">
+                                    <select id="to-currency" required>
+                                        <option value="">Select currency</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="convert-btn">Convert</button>
+                    </form>
+                    <div class="result-container">
+                        <div id="result" class="result">
+                            <span class="amount">0.00</span>
+                            <span class="currency-code">USD</span>
+                        </div>
+                        <div id="rate-info" class="rate-info"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rates-section">
+                <h2>Popular Exchange Rates</h2>
+                <div id="popular-rates" class="rates-grid"></div>
+            </section>
+
+            <section class="chart-section">
+                <h2>Historical Data</h2>
+                <div class="chart-controls">
+                    <button class="time-range-btn active" data-range="7d">7 Days</button>
+                    <button class="time-range-btn" data-range="1m">1 Month</button>
+                    <button class="time-range-btn" data-range="3m">3 Months</button>
+                </div>
+                <div class="chart-container">
+                    <canvas id="historical-chart"></canvas>
+                </div>
+            </section>
+
+            <section class="trends-section">
+                <h2>Today's Trends</h2>
+                <div class="trends-grid">
+                    <div class="trend-card gainers">
+                        <h3>Top Gainers</h3>
+                        <div id="top-gainers" class="trend-list"></div>
+                    </div>
+                    <div class="trend-card losers">
+                        <h3>Top Losers</h3>
+                        <div id="top-losers" class="trend-list"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- <footer class="footer">
+        <p>© 2025 Currency Converter. All rights reserved.</p>
+        <p>Created by <a href="https://www.linkedin.com/in/mohamed-elsayed-/" target="_blank" rel="noopener noreferrer">Mohamed Elsayed</a></p>
+    </footer> -->
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Currency Converter. All rights reserved.</p>
+        <p>Created by <a href="https://github.com/Mohamed074k" target="_blank" rel="noopener noreferrer">Mohamed Elsayed</a></p>
+     </footer>
+    <script src="script.js"></script>
+</body>
+</html>
