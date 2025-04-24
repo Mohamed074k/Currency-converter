@@ -3,10 +3,15 @@ A lightweight, no-framework currency exchange web app with real-time rates, dark
 
 🌟 Key Features
 ✔ Instant Currency Conversion – 160+ currencies with live exchange rates.
+
 ✔ Dark/Light Mode Toggle – Smooth theme switching (saves preference).
+
 ✔ Popular Currency Pairs – Quick-access section for common conversions (USD, EUR, GBP, etc.).
+
 ✔ Historical Exchange Rate Charts – Visualize trends (7 days, 1 month, 3 months) using Chart.js.
+
 ✔ Top Gainers & Losers – Daily forex market performance highlights.
+
 ✔ Mobile-Friendly – Fully responsive design.
 
 ⚙️ Tech Stack
